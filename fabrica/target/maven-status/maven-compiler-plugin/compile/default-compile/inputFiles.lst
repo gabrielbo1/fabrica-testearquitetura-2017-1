@@ -1,0 +1,14 @@
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/controller/Controller.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dao/TarefaDAO.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/controller/SerializadorJson.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dao/GenericDAO.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dao/Entidade.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/Principal.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/dto/DTO.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dominio/ExcecaoNegocio.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/controller/ControllerTarefa.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/servico/ServicoTarefa.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dao/ProvedorTransacao.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/dto/TarefaDTO.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dominio/Tarefa.java
+/home/gabriel/workspace/fabrica/src/main/java/fabrica/model/dao/TransacaoHibernate.java
