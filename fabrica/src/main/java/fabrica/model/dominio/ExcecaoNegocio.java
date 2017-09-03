@@ -7,11 +7,11 @@ public class ExcecaoNegocio extends RuntimeException {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public Integer codErro;
+	private Integer codErro;
 	
-	public String tituloErro;
+	private String tituloErro;
 	
-	public String descricaoErro;
+	private String descricaoErro;
 
 	public ExcecaoNegocio(Integer codErro, String tituloErro,
 			String descricaoErro) {

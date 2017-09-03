@@ -7,6 +7,12 @@ import javax.persistence.InheritanceType;
 
 import fabrica.model.dao.Entidade;
 
+/**
+ * 
+ * @author  gabriel
+ * @version 1.0.0
+ */
+
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Tarefa extends Entidade {
@@ -28,9 +34,15 @@ public class Tarefa extends Entidade {
 	 *            - Descricao da tarefa.
 	 */
 	public Tarefa NovaTarefa(final String tituloP, final String descricaoP) {
-		if (tituloP != null && tituloP.length() > 30)
+		
+		if (tituloP == null || tituloP.length() > 30)
 			throw new ExcecaoNegocio(1, "Titulo inválido",
-					"Título da tarefa nulo ou maior que 30 caracteres");
+					"Título da tarefa nulo ou maior que 30 caracteres.");
+		
+		if (descricaoP == null || descricaoP.length() > 1000)
+			throw new ExcecaoNegocio(2, "Descrição inválida",
+					"Descrição da tarefa nula ou maior que 1000 caracteres.");
+
 		titulo = tituloP;
 		descricao = descricaoP;
 		return this;

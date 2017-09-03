@@ -2,6 +2,13 @@ package fabrica.dto;
 
 import fabrica.model.dominio.Tarefa;
 
+/**
+ * 
+ * @author  gabriel
+ * @version 1.0.0
+ * 
+ * DTO correpondente a entidade {@link Tarefa}.
+ */
 public class TarefaDTO extends DTO<Tarefa> {
 
 	private Long id;

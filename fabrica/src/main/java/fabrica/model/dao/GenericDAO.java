@@ -25,12 +25,12 @@ public abstract class GenericDAO<T extends Entidade, ID extends Serializable> {
 	/**
 	 * Fornecedor de EntityManager.
 	 */
-	private final ProvedorTransacao trs;
+	protected final ProvedorTransacao trs;
 
 	/**
 	 * Classe da entidade correspondete ao DAO.
 	 */
-	private final Class<T> clazz;
+	protected final Class<T> clazz;
 
 	/**
 	 * 
