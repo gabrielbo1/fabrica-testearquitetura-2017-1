@@ -12,13 +12,16 @@ public class ExcecaoNegocio extends RuntimeException {
 	private String tituloErro;
 	
 	private String descricaoErro;
+	
+	private Integer httpCode;
 
 	public ExcecaoNegocio(Integer codErro, String tituloErro,
-			String descricaoErro) {
+			String descricaoErro, Integer httpCode) {
 		super();
 		this.codErro = codErro;
 		this.tituloErro = tituloErro;
 		this.descricaoErro = descricaoErro;
+		this.httpCode = httpCode;
 	}
 
 	public Integer getCodErro() {
@@ -31,5 +34,9 @@ public class ExcecaoNegocio extends RuntimeException {
 
 	public String getDescricaoErro() {
 		return descricaoErro;
+	}
+
+	public Integer getHttpCode() {
+		return httpCode;
 	}
 }

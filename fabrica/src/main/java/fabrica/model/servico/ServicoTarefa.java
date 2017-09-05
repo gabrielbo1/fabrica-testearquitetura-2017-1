@@ -41,11 +41,14 @@ public class ServicoTarefa {
 					tarefaDTO.getDescricao());
 		};
 		tarefaDAO.atualizar(atualizacao, tarefaDTO.getId());
+
 		return tarefaDTO;
 	}
 
 	public Collection<TarefaDTO> buscarTodas() {
-		return tarefaDAO.buscarTodos().stream().map(TarefaDTO::converterDominio)
-				.collect(Collectors.toList());
+		return tarefaDAO.buscarTodos()
+				        .stream()
+				        .map(TarefaDTO::converterDominio)
+				        .collect(Collectors.toList());
 	}
 }

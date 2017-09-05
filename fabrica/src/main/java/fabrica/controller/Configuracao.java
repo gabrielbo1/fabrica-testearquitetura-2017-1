@@ -25,6 +25,8 @@ public final class Configuracao {
 		exception(ExcecaoNegocio.class, (excecao, requesicao, resposta) -> {			
 			resposta.body(json.gson.toJson(ExcecaoNegocioDTO.converterDominio(excecao)));
 			resposta.header("content-type", "application/json");
+			
+			resposta.status(excecao.getHttpCode());
 		});
 	}
 }
