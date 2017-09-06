@@ -8,7 +8,6 @@ services:
     command: bash -c "mvn clean package && java -jar target/fabrica-jar-with-dependencies.jar"
     depends_on:
       - db
-
   db:
     image: "mysql:8.0.2"
     environment:
