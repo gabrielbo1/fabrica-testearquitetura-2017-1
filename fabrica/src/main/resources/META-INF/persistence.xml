@@ -13,7 +13,7 @@
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="123456" />
 			<property name="javax.persistence.jdbc.url"
-					value="jdbc:mysql://localhost:3306/portaltransparencia?useTimezone=true&amp;serverTimezone=UTC"></property>
+					value="jdbc:mysql://db:3306/portaltransparencia?useTimezone=true&amp;serverTimezone=UTC"></property>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 			<property name="hibernate.connection.shutdown" value="true" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
