@@ -4,6 +4,7 @@ import static spark.Spark.*;
 
 import fabrica.dto.ExcecaoNegocioDTO;
 import fabrica.model.dominio.ExcecaoNegocio;
+import fabrica.util.UtilArgs;
 
 /**
  * 
@@ -19,6 +20,12 @@ public final class Configuracao {
 	
 	public static void config(String args[]) {
 	    
+		/**
+		 * Passa os argumentos ao ultilitario para guarda-los
+		 * em memoria.
+		 */
+		UtilArgs.configura(args);
+		
 		/**
 		 * Tratamento genérico de exceções.
 		 */
