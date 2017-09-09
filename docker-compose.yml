@@ -5,7 +5,7 @@ services:
     volumes:
       - "./fabrica/:/usr/src/mymaven"
     working_dir: "/usr/src/mymaven"
-    command: bash -c "mvn package && java -jar target/fabrica-jar-with-dependencies.jar"
+    command: bash -c "mvn package && java -jar target/fabrica-jar-with-dependencies.jar DNSBD:db"
     depends_on:
       - db
   db:
